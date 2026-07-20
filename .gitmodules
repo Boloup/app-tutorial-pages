@@ -1,0 +1,18 @@
+[submodule "self-gift-final"]
+	path = self-gift-final
+	url = https://github.com/Boloup/self-gift-final.git
+[submodule "host-salary-benefits-upgrade"]
+	path = host-salary-benefits-upgrade
+	url = https://github.com/Boloup/host-salary-benefits-upgrade.git
+[submodule "boloup-new-host-guide"]
+	path = boloup-new-host-guide
+	url = https://github.com/Boloup/boloup-new-host-guide.git
+[submodule "vip-lark-pages"]
+	path = vip-lark-pages
+	url = https://github.com/Boloup/vip-lark-pages.git
+[submodule "lark-download"]
+	path = lark-download
+	url = https://github.com/Boloup/lark-download.git
+[submodule "bd-policy-guide-site"]
+	path = bd-policy-guide-site
+	url = https://github.com/Boloup/bd-policy-guide-site.git
