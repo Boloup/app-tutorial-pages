@@ -14,8 +14,8 @@
 | VIP Lark Pages | VIP/Lark 多人多语言引导页 | [打开页面](https://boloup.github.io/vip-lark-pages/) | [`vip-lark-pages/`](./vip-lark-pages/) |
 | Lark Download | Lark 下载引导 | [打开页面](https://boloup.github.io/lark-download/) | [`lark-download/`](./lark-download/) |
 | BD Policy Guide | BD 薪资政策与奖励计算指南 | [打开页面](https://boloup.github.io/bd-policy-guide-site/) | [`bd-policy-guide-site/`](./bd-policy-guide-site/) |
+| Yago Creator Rewards — July 13–19, 2026 | Yago 创作者奖励发放结果公示 | [打开页面](https://boloup.github.io/app-tutorial-pages/yago-creator-rewards-2026-07-13-to-19/) | [`yago-creator-rewards-2026-07-13-to-19/`](./yago-creator-rewards-2026-07-13-to-19/) |
 
 ## 更新方式
 
-各页面继续在原仓库中维护。需要让本仓库指向最新版本时，更新对应子模块的提交引用即可。
-
+既有页面继续在原仓库中维护。需要让本仓库指向最新版本时，更新对应子模块的提交引用即可。直接存放在本仓库中的静态页面则在各自目录中维护。
