@@ -1,0 +1,66 @@
+:root {
+  --page-bg: #05020c;
+  --lime: #baff00;
+  --pink: #ff3ead;
+  --violet: #b868ff;
+  --violet-soft: #c38aff;
+  --white: #ffffff;
+  --font-page: "Montserrat", "Avenir Next", "Helvetica Neue", sans-serif;
+}
+* { box-sizing: border-box; }
+html { background: #000; color-scheme: dark; }
+body { margin: 0; min-width: 320px; background: #000; color: var(--white); font-family: var(--font-page); -webkit-font-smoothing: antialiased; }
+button { font: inherit; }
+.page-shell { width: 100%; max-width: 430px; min-height: 100vh; margin: 0 auto; overflow: hidden; background: radial-gradient(circle at 50% 25%, rgba(94,24,120,.18), transparent 34%), linear-gradient(180deg,#05020c 0%,#030107 100%); }
+.top-safe-nav { min-height: calc(64px + env(safe-area-inset-top)); padding: calc(14px + env(safe-area-inset-top)) 16px 10px; background: #000; display: flex; align-items: flex-end; }
+.icon-button { width: 40px; height: 40px; padding: 8px; border: 0; border-radius: 50%; background: transparent; color: var(--white); display: inline-grid; place-items: center; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.icon-button:focus-visible,.load-more-button:focus-visible { outline: 3px solid var(--violet); outline-offset: 2px; }
+.icon-button svg { width: 24px; height: 24px; }
+.hero { background: #05020c; text-align: center; }
+.hero-header { display: block; width: 100%; height: auto; }
+.hero-copy { padding: 16px 16px 5px; }
+.hero-total,.period-text { margin: 0; }
+.hero-total { color: var(--white); font-size: 25px; font-weight: 900; line-height: 1.14; letter-spacing: -.7px; text-shadow: 0 0 15px rgba(255,255,255,.12); }
+.period-text { margin-top: 11px; color: var(--violet-soft); font-size: 15px; font-weight: 800; line-height: 1.2; }
+.points-stage-image { display: block; width: 100%; height: 125px; object-fit: cover; object-position: center; }
+.summary-panel { width: calc(100% - 32px); min-height: 80px; margin: 0 16px; border: 1px solid rgba(195,104,255,.48); border-radius: 11px; background: rgba(21,7,31,.7); display: grid; grid-template-columns: repeat(3,1fr); overflow: hidden; }
+.summary-item { position: relative; min-width: 0; padding: 12px 4px 10px; text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+.summary-item + .summary-item::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: rgba(201,146,255,.38); }
+.summary-item strong { color: var(--lime); font-size: 22px; font-weight: 900; line-height: 1; letter-spacing: -.8px; }
+.summary-item span { color: var(--white); font-size: 10px; font-weight: 600; line-height: 1.25; }
+.winners-section { padding: 0 16px; }
+.section-heading { height: 67px; display: flex; align-items: center; justify-content: space-between; }
+.section-heading h2 { margin: 0; font-size: 27px; font-weight: 900; line-height: 1; letter-spacing: -.9px; }
+.refresh-button { color: #e780ff; }
+.winner-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 7px; }
+.winner-card { min-height: 54px; padding: 0 8px 0 0; border: 1px solid rgba(255,255,255,.24); border-radius: 11px; background: rgba(7,4,14,.92); color: var(--white); display: grid; grid-template-columns: 41px minmax(0,1fr) 67px 99px; align-items: center; overflow: hidden; }
+.winner-card.is-first { border-color: var(--pink); box-shadow: 0 0 10px rgba(255,62,173,.7), inset 0 0 10px rgba(255,62,173,.08); }
+.winner-card.is-top-three { border-color: #cf6cff; box-shadow: 0 0 9px rgba(180,77,255,.58), inset 0 0 10px rgba(180,77,255,.08); }
+.rank { align-self: stretch; display: grid; place-items: center; color: var(--violet-soft); background: rgba(80,38,111,.12); font-size: 23px; font-weight: 900; line-height: 1; }
+.winner-card.is-first .rank { color: var(--lime); background: linear-gradient(180deg,#ff43b4,#df378f); }
+.winner-card.is-top-three .rank { color: var(--lime); background: linear-gradient(180deg,#b840f0,#7e24bc); }
+.winner-identity { min-width: 0; padding-left: 11px; display: flex; flex-direction: column; }
+.nickname { overflow: hidden; color: var(--white); font-family: var(--font-page),"Apple Color Emoji","Segoe UI Emoji",sans-serif; font-size: 13px; font-weight: 800; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
+.uid { color: var(--violet-soft); font-size: 10px; font-weight: 700; line-height: 1.2; }
+.reward { min-width: 0; display: grid; grid-template-columns: 30px minmax(0,1fr); align-items: center; gap: 5px; }
+.reward img { width: 30px; height: 30px; object-fit: contain; }
+.reward-copy { min-width: 0; display: flex; flex-direction: column; text-align: left; }
+.reward-copy strong { color: var(--white); font-size: 14px; font-weight: 900; line-height: 1.05; letter-spacing: -.35px; }
+.reward-copy span { color: var(--violet-soft); font-size: 10px; font-weight: 700; line-height: 1.15; }
+.list-action { padding: 18px 0 8px; text-align: center; }
+.list-action[hidden] { display: none; }
+.load-more-button { min-width: 150px; min-height: 42px; padding: 0 22px; border: 1px solid var(--violet); border-radius: 10px; background: rgba(18,8,28,.9); color: var(--white); box-shadow: 0 0 10px rgba(182,104,255,.28); font-size: 13px; font-weight: 800; cursor: pointer; }
+.load-more-button:active { color: var(--lime); border-color: var(--lime); }
+.list-status { min-height: 42px; margin: 0; color: var(--white); font-size: 13px; font-weight: 700; line-height: 42px; }
+.page-footer { padding: 18px 20px calc(24px + env(safe-area-inset-bottom)); text-align: center; }
+.page-footer p { margin: 0; }
+.page-footer p { color: var(--white); font-size: 11px; font-weight: 700; line-height: 1.5; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 374px) {
+  .winner-card { grid-template-columns: 38px minmax(0,1fr) 61px 91px; }
+  .nickname { font-size: 12px; }
+  .reward { grid-template-columns: 27px minmax(0,1fr); gap: 4px; }
+  .reward img { width: 27px; height: 27px; }
+  .reward-copy strong { font-size: 13px; }
+  .summary-item strong { font-size: 20px; }
+}
