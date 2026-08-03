@@ -1,0 +1,40 @@
+{
+  "backLabel": "Kembali",
+  "title": "Cara Mendapat <strong>Hingga $30</strong> per Host Baru",
+  "subtitle": "Tutorial Bonus Undang & Rekrut",
+  "pathsTitle": "Dua Cara Berpartisipasi",
+  "invite": {
+    "label": "Undang",
+    "steps": ["Ketuk Undang Sekarang", "Bagikan tautan Anda", "Gunakan perangkat baru", "Unduh & daftar pertama kali"]
+  },
+  "recruit": {
+    "label": "Rekrut",
+    "steps": ["Buka chat pribadi", "Terima minimal satu pesan", "Kirim undangan agensi", "Pengguna menerima dan bergabung"]
+  },
+  "bothBonuses": "Penuhi kedua syarat untuk berhak atas <strong>kedua bonus.</strong>",
+  "referral": {
+    "title": "Bagikan Tautan Referral Anda",
+    "description": "Undang pengguna baru dengan tautan referral Anda.",
+    "fieldLabel": "Tautan Referral Anda",
+    "copy": "Salin Tautan"
+  },
+  "recruitPanel": {
+    "title": "Rekrut di Chat Pribadi",
+    "description": "Rekrut pengguna yang mengirim pesan kepada Anda di chat pribadi.",
+    "bubble": "Rekrut host ke agensi Anda langsung dari chat.",
+    "caption": "Anda hanya dapat merekrut pengguna yang telah mengirim setidaknya satu pesan kepada Anda.",
+    "enlargeLabel": "Lihat gambar tutorial Rekrut ke Agensi"
+  },
+  "verification": "Bonus diberikan setelah verifikasi wajah selesai.",
+  "tasksTitle": "3 Cara Host Menyelesaikan Tugas",
+  "tasks": [
+    {"title": "Waktu Mic", "description": "Masuk ke room suara.", "icon": "mic-vocal"},
+    {"title": "Pendapatan Hadiah", "description": "Terima hadiah.", "icon": "coin"},
+    {"title": "Gim", "description": "Mainkan gim.", "icon": "gamepad-2"}
+  ],
+  "quickTips": "Tips Singkat",
+  "faqs": [
+    {"question": "Siapa yang termasuk pengguna baru?", "answer": "Pengguna yang mendaftar di perangkat yang belum pernah digunakan untuk mendaftar."},
+    {"question": "Kapan saya menerima bonus?", "answer": "Bonus diberikan setelah pengguna menyelesaikan verifikasi wajah."}
+  ]
+}

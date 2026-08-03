@@ -1,0 +1,40 @@
+{
+  "backLabel": "Back",
+  "title": "How to Earn <strong>Up to $30</strong> per New Host",
+  "subtitle": "Invite & Recruit Bonus Tutorial",
+  "pathsTitle": "Two Participation Paths",
+  "invite": {
+    "label": "Invite",
+    "steps": ["Tap Invite Now", "Share your link", "New device", "First download & registration"]
+  },
+  "recruit": {
+    "label": "Recruit",
+    "steps": ["Open private chat", "Receive one message", "Send agency invite", "User accepts and joins"]
+  },
+  "bothBonuses": "Meet both conditions to qualify for <strong>both bonuses.</strong>",
+  "referral": {
+    "title": "Share Your Referral Link",
+    "description": "Invite new users with your referral link.",
+    "fieldLabel": "Your Referral Link",
+    "copy": "Copy Link"
+  },
+  "recruitPanel": {
+    "title": "Recruit in Private Chat",
+    "description": "Recruit users who message you in private chat.",
+    "bubble": "Recruit a host to your agency directly from chat.",
+    "caption": "You can only recruit users who have sent you at least one message.",
+    "enlargeLabel": "View Recruit to Agency tutorial image"
+  },
+  "verification": "Rewards are released after face verification.",
+  "tasksTitle": "3 Ways Hosts Complete Tasks",
+  "tasks": [
+    {"title": "Mic Time", "description": "Join voice rooms.", "icon": "mic-vocal"},
+    {"title": "Gift Income", "description": "Receive gifts.", "icon": "coin"},
+    {"title": "Game", "description": "Play games.", "icon": "gamepad-2"}
+  ],
+  "quickTips": "Quick Tips",
+  "faqs": [
+    {"question": "Who counts as a new user?", "answer": "A user who registers on a device that has never signed up before."},
+    {"question": "When will I get my rewards?", "answer": "Rewards are released after the user completes face verification."}
+  ]
+}
