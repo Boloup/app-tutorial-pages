@@ -1,0 +1,40 @@
+{
+  "backLabel": "Retour",
+  "title": "Comment gagner <strong>jusqu’à 30 $</strong> par nouvel hôte",
+  "subtitle": "Tutoriel des bonus d’invitation et de recrutement",
+  "pathsTitle": "Deux façons de participer",
+  "invite": {
+    "label": "Inviter",
+    "steps": ["Appuyez sur Inviter maintenant", "Partagez votre lien", "Utilisez un nouvel appareil", "Premier téléchargement et première inscription"]
+  },
+  "recruit": {
+    "label": "Recruter",
+    "steps": ["Ouvrez le chat privé", "Recevez au moins un message", "Envoyez l’invitation à l’agence", "L’utilisateur accepte et rejoint l’agence"]
+  },
+  "bothBonuses": "Remplissez les deux conditions pour bénéficier <strong>des deux bonus.</strong>",
+  "referral": {
+    "title": "Partagez votre lien de parrainage",
+    "description": "Invitez de nouveaux utilisateurs avec votre lien de parrainage.",
+    "fieldLabel": "Votre lien de parrainage",
+    "copy": "Copier le lien"
+  },
+  "recruitPanel": {
+    "title": "Recruter dans le chat privé",
+    "description": "Recrutez les utilisateurs qui vous écrivent dans le chat privé.",
+    "bubble": "Recrutez rapidement un hôte dans votre agence depuis le chat.",
+    "caption": "Vous ne pouvez recruter que les utilisateurs qui vous ont envoyé au moins un message.",
+    "enlargeLabel": "Afficher l’image du tutoriel de recrutement"
+  },
+  "verification": "Les bonus sont versés après la vérification du visage.",
+  "tasksTitle": "3 façons pour les hôtes d’accomplir des tâches",
+  "tasks": [
+    {"title": "Temps au micro", "description": "Rejoignez des salons vocaux.", "icon": "mic-vocal"},
+    {"title": "Revenus des cadeaux", "description": "Recevez des cadeaux.", "icon": "coin"},
+    {"title": "Jeux", "description": "Jouez à des jeux.", "icon": "gamepad-2"}
+  ],
+  "quickTips": "Conseils rapides",
+  "faqs": [
+    {"question": "Qui est considéré comme nouvel utilisateur ?", "answer": "Un utilisateur qui s’inscrit sur un appareil jamais utilisé pour une inscription."},
+    {"question": "Quand recevrai-je mes bonus ?", "answer": "Les bonus sont versés après la vérification du visage."}
+  ]
+}
