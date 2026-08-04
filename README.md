@@ -19,6 +19,9 @@
 | Yago Creator Rewards — July 27–August 2, 2026 | Yago 创作者奖励发放结果公示 | [打开页面](https://boloup.github.io/app-tutorial-pages/yago-creator-rewards-2026-07-27-to-08-02/) | [`yago-creator-rewards-2026-07-27-to-08-02/`](./yago-creator-rewards-2026-07-27-to-08-02/) |
 | Invite & Recruit Bonus Tutorial | 邀请与招募奖励参与教程 | [打开页面](https://boloup.github.io/app-tutorial-pages/invite-reward-tutorial/?lang=en) | [`invite-reward-tutorial/`](./invite-reward-tutorial/) |
 
+| Invite & Recruit Rewards Guide | 邀请与招募奖励说明教程 | [打开页面](https://boloup.github.io/app-tutorial-pages/host-invite-recruit-rewards-tutorial/dist/en/) | [`host-invite-recruit-rewards-tutorial/`](./host-invite-recruit-rewards-tutorial/) |
+| Private Chat Recruitment Guide | 私聊招募详细教程 | [打开页面](https://boloup.github.io/app-tutorial-pages/private-chat-recruitment-tutorial/dist/en/) | [`private-chat-recruitment-tutorial/`](./private-chat-recruitment-tutorial/) |
+
 ## 更新方式
 
 既有页面继续在原仓库中维护。需要让本仓库指向最新版本时，更新对应子模块的提交引用即可。直接存放在本仓库中的静态页面则在各自目录中维护。

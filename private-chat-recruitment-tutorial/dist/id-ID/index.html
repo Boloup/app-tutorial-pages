@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id-ID">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0730" />
+  <title>Rekrut Host melalui Chat Pribadi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="safe-nav" aria-label="Page navigation">
+      <button class="back-button" type="button" aria-label="Go back" data-back>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+      </button>
+    </nav>
+
+    <header class="hero">
+      <img class="hero-art" src="../../assets/crop-hero-stage.png" alt="" />
+      <div class="hero-copy">
+        <p class="eyebrow">Rekrutmen melalui Chat Pribadi</p>
+        <h1>Rekrut Host<br />melalui Chat Pribadi</h1>
+        <p>Undang pengguna yang memenuhi syarat untuk bergabung dengan Agency Anda langsung dari percakapan.</p>
+        <span class="audience-pill">Untuk Agent &amp; Host</span>
+      </div>
+    </header>
+
+    <section class="prerequisites" aria-labelledby="before-title">
+      <div class="section-heading compact">
+        <span class="heading-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <div><p class="kicker">Sebelum memulai</p><h2 id="before-title">Semua persyaratan harus terpenuhi</h2></div>
+      </div>
+      <ul class="check-list">
+        <li><span>01</span><strong>Anda adalah Agent atau Host.</strong></li>
+        <li><span>02</span><strong>Anda telah lulus Verifikasi Wajah.</strong></li>
+        <li><span>03</span><strong>Pengguna belum pernah bergabung dengan Agency mana pun.</strong></li>
+        <li><span>04</span><strong>Pengguna telah mengirim setidaknya satu pesan chat pribadi kepada Anda.</strong></li>
+      </ul>
+      <p class="info-note"><strong>Penting:</strong> Target tidak perlu lulus Verifikasi Wajah sebelum Anda mengirim undangan.</p>
+    </section>
+
+    <section class="journey" aria-labelledby="steps-title">
+      <div class="section-heading centered"><p class="kicker">Cara kerjanya</p><h2 id="steps-title">6 langkah rekrutmen</h2></div>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">1</span><div><p class="step-kicker">Mulai percakapan</p><h3>Terima setidaknya satu balasan</h3></div></div>
+        <p>Siapa pun boleh memulai chat. Sebelum Anda dapat merekrut pengguna, mereka harus sudah mengirim setidaknya satu pesan chat pribadi kepada Anda.</p>
+        <div class="micro-callout">Pesan masuk “hi” memenuhi persyaratan balasan.</div>
+        <figure class="screen-frame"><img src="../../assets/screens/chat-reply-recruit.png" alt="BoloUp private chat showing a reply from an eligible user" /><figcaption>Pastikan profil pengguna terlihat: tidak adanya badge Agency berarti pengguna belum menjadi Host.</figcaption></figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">2</span><div><p class="step-kicker">Kirim undangan</p><h3>Ketuk ikon Recruit</h3></div></div>
+        <p>Ketuk ikon amplop-plus di toolbar chat. Ikon hanya muncul jika Anda dan target memenuhi syarat rekrutmen.</p>
+        <figure class="screen-frame landscape recruit-toolbar-shot">
+          <div class="annotated-toolbar">
+            <img src="../../assets/screens/recruit-toolbar.png" alt="BoloUp private-chat toolbar showing the Recruit button" />
+            <span class="recruit-button-highlight" aria-hidden="true"></span>
+            <span class="recruit-button-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Ketuk Recruit</span>
+          </div>
+          <figcaption>Ketuk tombol amplop-plus di toolbar bawah.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">3</span><div><p class="step-kicker">Periksa pengguna</p><h3>Konfirmasi rekrutmen</h3></div></div>
+        <p>Periksa informasi pengguna pada dialog konfirmasi, lalu ketuk <strong>OK</strong> untuk mengirim undangan.</p>
+        <figure class="screen-frame compact-screen"><img src="../../assets/screens/recruit-confirmation.png" alt="BoloUp recruitment confirmation dialog" /><figcaption>Pastikan pengguna sudah benar sebelum mengirim.</figcaption></figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">4</span><div><p class="step-kicker">Undangan terkirim</p><h3>Tunggu pengguna menerima</h3></div></div>
+        <p>Pesan hitam <strong>Operation succeed</strong> hanya mengonfirmasi bahwa undangan telah dikirim.</p>
+        <div class="warning"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10.3 2.9 1.8 17a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 2.9a2 2 0 0 0-3.4 0ZM12 9v4m0 4h.01"/></svg><div><strong>Undangan terkirim ≠ User joined</strong><span>Pengguna masih harus mengetuk Accept Now.</span></div></div>
+        <figure class="screen-frame"><img src="../../assets/screens/operation-succeed-chat.png" alt="BoloUp chat showing the Operation succeed message" /></figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">5</span><div><p class="step-kicker">Tindakan pengguna</p><h3>Pengguna mengetuk Accept Now</h3></div></div>
+        <p>Pengguna menerima undangan di chat pribadi. Rekrutmen selesai hanya setelah mereka mengetuk <strong>Accept Now</strong>. Memilih <strong>Later</strong> tidak menyelesaikan proses.</p>
+        <figure class="screen-frame invitation-screen"><img src="../../assets/screens/recruit-invitation.png" alt="BoloUp Agency invitation with the Accept Now button" /><figcaption>Nominal Salary dan tugas mengikuti tampilan terbaru di aplikasi.</figcaption></figure>
+      </article>
+
+      <article class="step-card record-card">
+        <div class="step-header"><span class="step-number">6</span><div><p class="step-kicker">Verifikasi hasil</p><h3>Periksa catatan rekrutmen</h3></div></div>
+        <p>Gunakan halaman aktivitas sebagai tempat resmi untuk memeriksa pengguna yang direkrut dan statusnya.</p>
+        <ol class="record-path"><li><span>1</span>Buka halaman aktivitas dan ketuk <strong>Recruit users in app</strong>.</li><li><span>2</span>Lihat catatan pengguna di <strong>My Guide</strong>.</li></ol>
+        <figure class="screen-frame landscape activity-entry-shot">
+          <div class="annotated-image">
+            <img src="../../assets/screens/activity-recruit-entry-crop.png" alt="Activity page showing the Recruit users in app card" />
+            <span class="tap-highlight" aria-hidden="true"></span>
+            <span class="tap-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Ketuk di sini</span>
+          </div>
+          <figcaption>Ketuk panah di sudut kanan atas kartu <strong>Recruit users in app</strong>.</figcaption>
+        </figure>
+        <figure class="screen-frame"><img src="../../assets/screens/my-guide-record.png" alt="My Guide recruitment record screen" /><figcaption>My Guide menampilkan hubungan rekrutmen serta status Verifikasi Wajah atau tugas saat ini.</figcaption></figure>
+      </article>
+    </section>
+
+    <section class="outcome">
+      <p class="kicker">Apa yang terjadi selanjutnya</p>
+      <h2>Pengguna menjadi Host</h2>
+      <p>Setelah menerima, pengguna bergabung dengan Agency Anda, menjadi Host, dan masuk ke halaman Salary saat ini. Tugas dan nilai mengikuti tampilan terbaru di aplikasi.</p>
+    </section>
+
+    <section class="troubleshoot collapsible-check">
+      <button class="check-toggle" type="button" aria-expanded="false" aria-controls="missing-icon-details">
+        <span><small>Pemeriksaan cepat</small><strong>Mengapa ikon Recruit tidak muncul?</strong></span>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="check-details" id="missing-icon-details" hidden>
+        <p>Jika pengguna sudah bergabung dengan Agency, mereka sudah menjadi Host dan tidak dapat direkrut melalui alur ini. Ikon Recruit tidak akan muncul.</p>
+        <figure class="screen-frame"><img src="../../assets/screens/existing-host-no-recruit.png" alt="BoloUp chat with an existing Host where the Recruit icon is absent" /><figcaption>Badge Demo Agency memastikan bahwa pengguna ini sudah menjadi Host.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="section-heading"><div><p class="kicker">Butuh bantuan?</p><h2 id="faq-title">FAQ</h2></div></div>
+      <div id="faq-list"></div>
+    </section>
+
+    <footer class="page-footer"><img src="../../assets/crop-page-ornaments.png" alt="" /><p>Ikuti tampilan terbaru di aplikasi untuk aturan dan nilai saat ini.</p></footer>
+  </main>
+  <script src="config.js"></script>
+  <script src="../../app.js"></script>
+</body>
+</html>

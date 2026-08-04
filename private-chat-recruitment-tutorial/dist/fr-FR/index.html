@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr-FR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0730" />
+  <title>Recruter un Host par chat privé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="safe-nav" aria-label="Page navigation">
+      <button class="back-button" type="button" aria-label="Go back" data-back>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+      </button>
+    </nav>
+
+    <header class="hero">
+      <img class="hero-art" src="../../assets/crop-hero-stage.png" alt="" />
+      <div class="hero-copy">
+        <p class="eyebrow">Recrutement par chat privé</p>
+        <h1>Recrutez un Host<br />par chat privé</h1>
+        <p>Invitez directement depuis votre conversation un utilisateur éligible à rejoindre votre Agency.</p>
+        <span class="audience-pill">Pour Agents et Hosts</span>
+      </div>
+    </header>
+
+    <section class="prerequisites" aria-labelledby="before-title">
+      <div class="section-heading compact">
+        <span class="heading-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <div><p class="kicker">Avant de commencer</p><h2 id="before-title">Toutes les conditions doivent être remplies</h2></div>
+      </div>
+      <ul class="check-list">
+        <li><span>01</span><strong>Vous êtes Agent ou Host.</strong></li>
+        <li><span>02</span><strong>Vous avez réussi la vérification faciale.</strong></li>
+        <li><span>03</span><strong>L’utilisateur n’a encore rejoint aucune Agency.</strong></li>
+        <li><span>04</span><strong>L’utilisateur vous a envoyé au moins un message privé.</strong></li>
+      </ul>
+      <p class="info-note"><strong>Important :</strong> la cible n’a pas besoin de la vérification faciale avant l’envoi de l’invitation.</p>
+    </section>
+
+    <section class="journey" aria-labelledby="steps-title">
+      <div class="section-heading centered"><p class="kicker">Fonctionnement</p><h2 id="steps-title">6 étapes pour recruter</h2></div>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">1</span><div><p class="step-kicker">Démarrer la conversation</p><h3>Recevoir au moins une réponse</h3></div></div>
+        <p>Chacun peut démarrer le chat. Avant le recrutement, l’utilisateur doit vous avoir envoyé au moins un message privé.</p>
+        <div class="micro-callout">Le message reçu « hi » remplit la condition de réponse.</div>
+        <figure class="screen-frame"><img src="../../assets/screens/chat-reply-recruit.png" alt="BoloUp private chat showing a reply from an eligible user" /><figcaption>Gardez le profil visible : l’absence de badge Agency signifie que l’utilisateur n’est pas encore Host.</figcaption></figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">2</span><div><p class="step-kicker">Envoyer l’invitation</p><h3>Appuyer sur l’icône Recruit</h3></div></div>
+        <p>Appuyez sur l’icône enveloppe-plus dans la barre du chat. Elle apparaît uniquement si vous et la cible remplissez les conditions.</p>
+        <figure class="screen-frame landscape recruit-toolbar-shot">
+          <div class="annotated-toolbar">
+            <img src="../../assets/screens/recruit-toolbar.png" alt="BoloUp private-chat toolbar showing the Recruit button" />
+            <span class="recruit-button-highlight" aria-hidden="true"></span>
+            <span class="recruit-button-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Appuyez ici</span>
+          </div>
+          <figcaption>Appuyez sur le bouton enveloppe-plus dans la barre inférieure.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">3</span><div><p class="step-kicker">Vérifier l’utilisateur</p><h3>Confirmer le recrutement</h3></div></div>
+        <p>Vérifiez les informations de l’utilisateur, puis appuyez sur <strong>OK</strong> pour envoyer l’invitation.</p>
+        <figure class="screen-frame compact-screen"><img src="../../assets/screens/recruit-confirmation.png" alt="BoloUp recruitment confirmation dialog" /><figcaption>Vérifiez qu’il s’agit du bon utilisateur avant l’envoi.</figcaption></figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">4</span><div><p class="step-kicker">Invitation envoyée</p><h3>Attendre l’acceptation</h3></div></div>
+        <p>Le message noir <strong>Operation succeed</strong> confirme uniquement l’envoi de l’invitation.</p>
+        <div class="warning"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10.3 2.9 1.8 17a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 2.9a2 2 0 0 0-3.4 0ZM12 9v4m0 4h.01"/></svg><div><strong>Invitation envoyée ≠ User joined</strong><span>L’utilisateur doit encore appuyer sur Accept Now.</span></div></div>
+        <figure class="screen-frame"><img src="../../assets/screens/operation-succeed-chat.png" alt="BoloUp chat showing the Operation succeed message" /></figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">5</span><div><p class="step-kicker">Action du destinataire</p><h3>L’utilisateur appuie sur Accept Now</h3></div></div>
+        <p>L’utilisateur reçoit une invitation dans le chat privé. Le recrutement est terminé uniquement après avoir appuyé sur <strong>Accept Now</strong>. <strong>Later</strong> ne termine pas le processus.</p>
+        <figure class="screen-frame invitation-screen"><img src="../../assets/screens/recruit-invitation.png" alt="BoloUp Agency invitation with the Accept Now button" /><figcaption>Les montants et les tâches suivent le dernier affichage de l’application.</figcaption></figure>
+      </article>
+
+      <article class="step-card record-card">
+        <div class="step-header"><span class="step-number">6</span><div><p class="step-kicker">Vérifier le résultat</p><h3>Consulter le suivi du recrutement</h3></div></div>
+        <p>Utilisez la page de l’activité pour consulter les utilisateurs recrutés et leur statut.</p>
+        <ol class="record-path"><li><span>1</span>Ouvrez la page de l’activité et appuyez sur <strong>Recruit users in app</strong>.</li><li><span>2</span>Consultez la fiche dans <strong>My Guide</strong>.</li></ol>
+        <figure class="screen-frame landscape activity-entry-shot">
+          <div class="annotated-image">
+            <img src="../../assets/screens/activity-recruit-entry-crop.png" alt="Activity page showing the Recruit users in app card" />
+            <span class="tap-highlight" aria-hidden="true"></span>
+            <span class="tap-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Appuyez ici</span>
+          </div>
+          <figcaption>Appuyez sur la flèche en haut à droite de la carte <strong>Recruit users in app</strong>.</figcaption>
+        </figure>
+        <figure class="screen-frame"><img src="../../assets/screens/my-guide-record.png" alt="My Guide recruitment record screen" /><figcaption>My Guide affiche la relation de recrutement et le statut actuel de vérification faciale ou des tâches.</figcaption></figure>
+      </article>
+    </section>
+
+    <section class="outcome">
+      <p class="kicker">Étape suivante</p>
+      <h2>L’utilisateur devient Host</h2>
+      <p>Après acceptation, l’utilisateur rejoint votre Agency, devient Host et accède à la page Salary actuelle. Les tâches et valeurs suivent l’affichage de l’application.</p>
+    </section>
+
+    <section class="troubleshoot collapsible-check">
+      <button class="check-toggle" type="button" aria-expanded="false" aria-controls="missing-icon-details">
+        <span><small>Vérification rapide</small><strong>Pourquoi l’icône Recruit est-elle absente ?</strong></span>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="check-details" id="missing-icon-details" hidden>
+        <p>Si l’utilisateur appartient déjà à une Agency, il est déjà Host et ne peut pas être recruté par ce parcours. L’icône Recruit n’apparaît pas.</p>
+        <figure class="screen-frame"><img src="../../assets/screens/existing-host-no-recruit.png" alt="BoloUp chat with an existing Host where the Recruit icon is absent" /><figcaption>Le badge Demo Agency confirme que cet utilisateur est déjà Host.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="section-heading"><div><p class="kicker">Besoin d’aide ?</p><h2 id="faq-title">FAQ</h2></div></div>
+      <div id="faq-list"></div>
+    </section>
+
+    <footer class="page-footer"><img src="../../assets/crop-page-ornaments.png" alt="" /><p>Consultez l’affichage le plus récent de l’application pour les règles et valeurs actuelles.</p></footer>
+  </main>
+  <script src="config.js"></script>
+  <script src="../../app.js"></script>
+</body>
+</html>

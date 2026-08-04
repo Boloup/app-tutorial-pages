@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0730" />
+  <title>Recruit a Host via Private Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="safe-nav" aria-label="Page navigation">
+      <button class="back-button" type="button" aria-label="Go back" data-back>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+      </button>
+    </nav>
+
+    <header class="hero">
+      <img class="hero-art" src="../../assets/crop-hero-stage.png" alt="" />
+      <div class="hero-copy">
+        <p class="eyebrow">Private Chat Recruitment</p>
+        <h1>Recruit a Host<br />via Private Chat</h1>
+        <p>Invite an eligible user to join your Agency directly from your conversation.</p>
+        <span class="audience-pill">For Agents &amp; Hosts</span>
+      </div>
+    </header>
+
+    <section class="prerequisites" aria-labelledby="before-title">
+      <div class="section-heading compact">
+        <span class="heading-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <div><p class="kicker">Before you start</p><h2 id="before-title">All requirements must be met</h2></div>
+      </div>
+      <ul class="check-list">
+        <li><span>01</span><strong>You are an Agent or Host.</strong></li>
+        <li><span>02</span><strong>You have passed Face Verification.</strong></li>
+        <li><span>03</span><strong>The user has not joined any Agency yet.</strong></li>
+        <li><span>04</span><strong>The user has sent you at least one private-chat message.</strong></li>
+      </ul>
+      <p class="info-note"><strong>Important:</strong> The target does not need Face Verification before you send the invitation.</p>
+    </section>
+
+    <section class="journey" aria-labelledby="steps-title">
+      <div class="section-heading centered"><p class="kicker">How it works</p><h2 id="steps-title">6 steps to recruit</h2></div>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">1</span><div><p class="step-kicker">Start the conversation</p><h3>Receive at least one reply</h3></div></div>
+        <p>Either person may start the chat. Before you can recruit the user, they must have sent you at least one private-chat message.</p>
+        <div class="micro-callout">The incoming message “hi” meets the reply requirement.</div>
+        <figure class="screen-frame"><img src="../../assets/screens/chat-reply-recruit.png" alt="BoloUp private chat showing a reply from an eligible user" /><figcaption>Keep the user profile visible: no Agency badge means the user is not yet a Host.</figcaption></figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">2</span><div><p class="step-kicker">Send the invitation</p><h3>Tap the Recruit icon</h3></div></div>
+        <p>Tap the envelope-plus icon in the chat toolbar. It appears only when both you and the target meet the recruitment conditions.</p>
+        <figure class="screen-frame landscape recruit-toolbar-shot">
+          <div class="annotated-toolbar">
+            <img src="../../assets/screens/recruit-toolbar.png" alt="BoloUp private-chat toolbar showing the Recruit button" />
+            <span class="recruit-button-highlight" aria-hidden="true"></span>
+            <span class="recruit-button-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Tap Recruit</span>
+          </div>
+          <figcaption>Tap the envelope-plus button in the bottom toolbar.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">3</span><div><p class="step-kicker">Check the user</p><h3>Confirm the recruitment</h3></div></div>
+        <p>Review the user information in the confirmation dialog, then tap <strong>OK</strong> to send the invitation.</p>
+        <figure class="screen-frame compact-screen"><img src="../../assets/screens/recruit-confirmation.png" alt="BoloUp recruitment confirmation dialog" /><figcaption>Confirm the correct user before sending.</figcaption></figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">4</span><div><p class="step-kicker">Invitation sent</p><h3>Wait for the user to accept</h3></div></div>
+        <p>The black <strong>Operation succeed</strong> message confirms only that the invitation was sent.</p>
+        <div class="warning"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10.3 2.9 1.8 17a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 2.9a2 2 0 0 0-3.4 0ZM12 9v4m0 4h.01"/></svg><div><strong>Invitation sent ≠ User joined</strong><span>The user still needs to tap Accept Now.</span></div></div>
+        <figure class="screen-frame"><img src="../../assets/screens/operation-succeed-chat.png" alt="BoloUp chat showing the Operation succeed message" /></figure>
+      </article>
+
+      <article class="step-card">
+        <div class="step-header"><span class="step-number">5</span><div><p class="step-kicker">Target-side action</p><h3>The user taps Accept Now</h3></div></div>
+        <p>The user receives an invitation in the private chat. Recruitment is completed only after they tap <strong>Accept Now</strong>. Selecting <strong>Later</strong> does not complete it.</p>
+        <figure class="screen-frame invitation-screen"><img src="../../assets/screens/recruit-invitation.png" alt="BoloUp Agency invitation with the Accept Now button" /><figcaption>Salary figures and tasks follow the latest in-app display.</figcaption></figure>
+      </article>
+
+      <article class="step-card record-card">
+        <div class="step-header"><span class="step-number">6</span><div><p class="step-kicker">Verify the result</p><h3>Check your recruitment record</h3></div></div>
+        <p>Use the activity page as the reliable place to check recruited users and their current status.</p>
+        <ol class="record-path"><li><span>1</span>Open the activity page and tap <strong>Recruit users in app</strong>.</li><li><span>2</span>View the user record in <strong>My Guide</strong>.</li></ol>
+        <figure class="screen-frame landscape activity-entry-shot">
+          <div class="annotated-image">
+            <img src="../../assets/screens/activity-recruit-entry-crop.png" alt="Activity page showing the Recruit users in app card" />
+            <span class="tap-highlight" aria-hidden="true"></span>
+            <span class="tap-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Tap here</span>
+          </div>
+          <figcaption>Tap the arrow on the upper-right corner of the <strong>Recruit users in app</strong> card.</figcaption>
+        </figure>
+        <figure class="screen-frame"><img src="../../assets/screens/my-guide-record.png" alt="My Guide recruitment record screen" /><figcaption>My Guide shows the recruitment relationship and current Face Verification or task status.</figcaption></figure>
+      </article>
+    </section>
+
+    <section class="outcome">
+      <p class="kicker">What happens next</p>
+      <h2>The user becomes a Host</h2>
+      <p>After accepting, the user joins your Agency, becomes a Host, and enters the current Salary page. Tasks and values are subject to the latest in-app display.</p>
+    </section>
+
+    <section class="troubleshoot collapsible-check">
+      <button class="check-toggle" type="button" aria-expanded="false" aria-controls="missing-icon-details">
+        <span><small>Quick check</small><strong>Why is the Recruit icon missing?</strong></span>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="check-details" id="missing-icon-details" hidden>
+        <p>If the user already belongs to an Agency, they are already a Host and cannot be recruited through this flow. The Recruit icon will not appear.</p>
+        <figure class="screen-frame"><img src="../../assets/screens/existing-host-no-recruit.png" alt="BoloUp chat with an existing Host where the Recruit icon is absent" /><figcaption>The Demo Agency badge confirms that this user is already a Host.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="section-heading"><div><p class="kicker">Need help?</p><h2 id="faq-title">FAQ</h2></div></div>
+      <div id="faq-list"></div>
+    </section>
+
+    <footer class="page-footer"><img src="../../assets/crop-page-ornaments.png" alt="" /><p>Follow the latest in-app display for current rules and values.</p></footer>
+  </main>
+  <script src="config.js"></script>
+  <script src="../../app.js"></script>
+</body>
+</html>
