@@ -17,6 +17,7 @@
 | Yago Creator Rewards — July 13–19, 2026 | Yago 创作者奖励发放结果公示 | [打开页面](https://boloup.github.io/app-tutorial-pages/yago-creator-rewards-2026-07-13-to-19/) | [`yago-creator-rewards-2026-07-13-to-19/`](./yago-creator-rewards-2026-07-13-to-19/) |
 | Yago Creator Rewards — July 20–26, 2026 | Yago 创作者奖励发放结果公示 | [打开页面](https://boloup.github.io/app-tutorial-pages/yago-creator-rewards-2026-07-20-to-26/) | [`yago-creator-rewards-2026-07-20-to-26/`](./yago-creator-rewards-2026-07-20-to-26/) |
 | Yago Creator Rewards — July 27–August 2, 2026 | Yago 创作者奖励发放结果公示 | [打开页面](https://boloup.github.io/app-tutorial-pages/yago-creator-rewards-2026-07-27-to-08-02/) | [`yago-creator-rewards-2026-07-27-to-08-02/`](./yago-creator-rewards-2026-07-27-to-08-02/) |
+| Yago Creator Rewards — August 3–9, 2026 | Yago 创作者奖励发放结果公示 | [打开页面](https://boloup.github.io/app-tutorial-pages/yago-creator-rewards-2026-08-03-to-08-09/) | [`yago-creator-rewards-2026-08-03-to-08-09/`](./yago-creator-rewards-2026-08-03-to-08-09/) |
 | Invite & Recruit Bonus Tutorial | 邀请与招募奖励参与教程 | [打开页面](https://boloup.github.io/app-tutorial-pages/invite-reward-tutorial/?lang=en) | [`invite-reward-tutorial/`](./invite-reward-tutorial/) |
 
 | Invite & Recruit Rewards Guide | 邀请与招募奖励说明教程 | [打开页面](https://boloup.github.io/app-tutorial-pages/host-invite-recruit-rewards-tutorial/dist/en/) | [`host-invite-recruit-rewards-tutorial/`](./host-invite-recruit-rewards-tutorial/) |
