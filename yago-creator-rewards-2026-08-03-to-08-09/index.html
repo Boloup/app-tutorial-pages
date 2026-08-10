@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <title>Yago Creator Rewards — Paid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav class="top-safe-nav" aria-label="Page navigation">
+        <button class="icon-button back-button" type="button" aria-label="Go back" data-back-button>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6"></path>
+          </svg>
+        </button>
+      </nav>
+
+      <section class="hero" aria-labelledby="page-title">
+        <h1 id="page-title" class="sr-only">Yago Creator Rewards — Paid</h1>
+        <img class="hero-header" src="./assets/crop-hero-header.png" alt="Yago Creator Rewards — Paid" />
+
+        <div class="hero-copy">
+            <p class="hero-total"><span data-total-points>395,500</span> <span>Points sent out!</span></p>
+            <p class="period-text" data-period>August 3–9, 2026</p>
+        </div>
+        <img class="points-stage-image" src="./assets/crop-points-heart-stage.png" alt="Pink heart Points reward icon" />
+      </section>
+
+      <section class="summary-panel" aria-label="Reward summary">
+        <div class="summary-item">
+          <strong data-winner-count>12</strong>
+          <span>Winners</span>
+        </div>
+        <div class="summary-item">
+          <strong data-summary-points>395,500</strong>
+          <span>Points</span>
+        </div>
+        <div class="summary-item">
+          <strong data-highest-reward>105,000</strong>
+          <span>Highest Reward</span>
+        </div>
+      </section>
+
+      <section class="winners-section" aria-labelledby="winners-heading">
+        <header class="section-heading">
+          <h2 id="winners-heading">Winners</h2>
+          <button class="icon-button refresh-button" type="button" aria-label="Refresh page" data-refresh-button>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12a9 9 0 0 0-15.2-6.5L3 8"></path>
+              <path d="M3 3v5h5"></path>
+              <path d="M3 12a9 9 0 0 0 15.2 6.5L21 16"></path>
+              <path d="M16 16h5v5"></path>
+            </svg>
+          </button>
+        </header>
+
+        <ol class="winner-list" data-winner-list aria-live="polite"></ol>
+
+        <div class="list-action" data-list-action>
+          <button class="load-more-button" type="button" data-load-more>Load more</button>
+          <p class="list-status" data-list-status hidden></p>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p data-footer-copy>Rewards have been sent to all listed winners.</p>
+      </footer>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
