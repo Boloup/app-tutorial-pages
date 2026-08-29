@@ -1,182 +1,30 @@
-(function () {
-  const config = window.ACTIVITY_CONFIG;
-  const app = document.getElementById("app");
-  const modal = document.getElementById("image-modal");
-
-  function requestedLocale() {
-    const query = new URLSearchParams(window.location.search).get("lang");
-    if (query && config.supportedLocales.includes(query)) return query;
-    return config.defaultLocale;
-  }
-
-  async function loadCopy(locale) {
-    const response = await fetch(config.localeFiles[locale]);
-    if (!response.ok) throw new Error(`Unable to load locale: ${locale}`);
-    return response.json();
-  }
-
-  function icon(name, className = "") {
-    return `<i data-lucide="${name}" class="${className}" aria-hidden="true"></i>`;
-  }
-
-  function pathSteps(steps, icons) {
-    return steps.map((step, index) => `
-      <li class="path-step">
-        <span class="step-number">${index + 1}</span>
-        <span class="step-icon">${icon(icons[index])}</span>
-        <span class="step-copy">${step}</span>
-      </li>`).join("");
-  }
-
-  function faqRows(items) {
-    return items.map((item) => `
-      <div class="faq-row">
-        <span class="faq-q">Q</span>
-        <strong>${item.question}</strong>
-        <span>${item.answer}</span>
-        ${icon("chevron-right")}
-      </div>`).join("");
-  }
-
-  function taskButton(task, index) {
-    const taskIcon = task.icon === "coin"
-      ? `<img src="${config.assets.coin}" alt="" />`
-      : icon(task.icon);
-    return `
-      <button class="task-tab${index === 0 ? " is-active" : ""}" type="button" data-task="${index}" aria-selected="${index === 0}">
-        <span class="task-tab__icon">${taskIcon}</span>
-        <span><strong>${task.title}</strong><small>${task.description}</small></span>
-      </button>`;
-  }
-
-  function render(copy, locale) {
-    document.documentElement.lang = locale;
-    document.title = copy.subtitle;
-    app.innerHTML = `
-      <nav class="top-safe-nav" aria-label="${copy.backLabel}">
-        <button class="back-button" type="button" aria-label="${copy.backLabel}">${icon("arrow-left")}</button>
-      </nav>
-
-      <header class="hero">
-        <div class="hero__copy">
-          <h1>${copy.title}</h1>
-          <p>${copy.subtitle}</p>
-        </div>
-        <div class="hero__art" aria-hidden="true">
-          <i data-lucide="sparkles" class="hero__spark hero__spark--one"></i>
-          <i data-lucide="sparkles" class="hero__spark hero__spark--two"></i>
-          <img class="hero__diamond" src="${config.assets.diamond}" alt="" />
-          <img class="hero__coin" src="${config.assets.coin}" alt="" />
-        </div>
-      </header>
-
-      <main class="main-card">
-        <section class="paths-section">
-          <h2 class="section-ribbon">${copy.pathsTitle}</h2>
-          <div class="paths-grid">
-            <article class="path-card path-card--invite">
-              <h3><span>${icon("link")}</span>${copy.invite.label}</h3>
-              <ol>${pathSteps(copy.invite.steps, ["mouse-pointer-click", "share-2", "smartphone", "download"])}</ol>
-            </article>
-            <article class="path-card path-card--recruit">
-              <h3><span><img src="${config.assets.recruitIcon}" alt="" /></span>${copy.recruit.label}</h3>
-              <ol>${pathSteps(copy.recruit.steps, ["message-circle", "message-square", "send", "users"])}</ol>
-            </article>
-          </div>
-          <div class="convergence-card">
-            <img src="${config.assets.coin}" alt="" />
-            <p>${copy.bothBonuses}</p>
-          </div>
-        </section>
-
-        <section class="walkthrough-grid">
-          <article class="walkthrough-card referral-card">
-            <div class="walkthrough-heading">
-              <span>${icon("link")}</span>
-              <div><h2>${copy.referral.title}</h2><p>${copy.referral.description}</p></div>
-            </div>
-            <label>${copy.referral.fieldLabel}</label>
-            <div class="referral-field">${config.maskedReferralLink}</div>
-            <div class="share-options">
-              <div class="share-option"><span>${icon("copy")}</span><small>${copy.referral.copy}</small></div>
-              <div class="share-option"><span class="brand-icon brand-icon--whatsapp"><img src="./assets/icons/whatsapp.svg" alt="" /></span><small>WhatsApp</small></div>
-              <div class="share-option"><span class="brand-icon brand-icon--facebook"><img src="./assets/icons/facebook.svg" alt="" /></span><small>Facebook</small></div>
-            </div>
-          </article>
-
-          <article class="walkthrough-card recruit-card">
-            <div class="walkthrough-heading">
-              <span class="recruit-heading-icon"><img src="${config.assets.recruitIcon}" alt="" /></span>
-              <div><h2>${copy.recruitPanel.title}</h2><p>${copy.recruitPanel.description}</p></div>
-            </div>
-            <button class="recruit-visual" type="button" aria-label="${copy.recruitPanel.enlargeLabel}">
-              <img src="${config.assets.recruitTutorial}" alt="" />
-              <span class="recruit-caption">${copy.recruitPanel.caption}</span>
-            </button>
-          </article>
-        </section>
-
-        <aside class="verification-notice">
-          <img src="${config.assets.coin}" alt="" />
-          <strong>${copy.verification}</strong>
-          <img src="${config.assets.diamond}" alt="" />
-        </aside>
-
-        <section class="tasks-section">
-          <h2>${copy.tasksTitle}</h2>
-          <div class="task-tabs" role="tablist">
-            ${copy.tasks.map(taskButton).join("")}
-          </div>
-        </section>
-
-        <section class="faq-section">
-          <h2>${copy.quickTips}</h2>
-          <div class="faq-list">${faqRows(copy.faqs)}</div>
-        </section>
-      </main>`;
-
-    wireInteractions();
-    if (window.lucide) window.lucide.createIcons();
-  }
-
-  function wireInteractions() {
-    document.querySelector(".back-button").addEventListener("click", () => {
-      if (window.history.length > 1) window.history.back();
-    });
-
-    document.querySelectorAll(".task-tab").forEach((button) => {
-      button.addEventListener("click", () => {
-        document.querySelectorAll(".task-tab").forEach((item) => {
-          const active = item === button;
-          item.classList.toggle("is-active", active);
-          item.setAttribute("aria-selected", String(active));
-        });
-      });
-    });
-
-    document.querySelector(".recruit-visual").addEventListener("click", () => {
-      modal.hidden = false;
-      document.body.classList.add("modal-open");
-    });
-  }
-
-  function closeModal() {
-    modal.hidden = true;
-    document.body.classList.remove("modal-open");
-  }
-
-  modal.querySelector(".image-modal__close").addEventListener("click", closeModal);
-  modal.addEventListener("click", (event) => {
-    if (event.target === modal) closeModal();
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && !modal.hidden) closeModal();
-  });
-
-  loadCopy(requestedLocale())
-    .then((copy) => render(copy, requestedLocale()))
-    .catch((error) => {
-      console.error(error);
-      app.innerHTML = '<p class="load-error">Unable to load the tutorial.</p>';
-    });
+(function(){
+  const cfg=window.ACTIVITY_CONFIG;
+  const root=document.documentElement;
+  const locale=document.body.dataset.locale||new URLSearchParams(location.search).get("lang")||cfg.defaultLocale;
+  const active=cfg.locales[locale]||cfg.locales[cfg.defaultLocale];
+  root.lang=locale;root.dir=active.dir;document.title=active.title;
+  const icon=(name,cls="")=>`<i data-lucide="${name}"${cls?` class="${cls}"`:""}></i>`;
+  const faqs=active.faq.map((item,index)=>`<article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-${index}">${icon("circle-help")}<span>${item.q}</span>${icon("chevron-down","chevron")}</button><div class="faq-answer" id="faq-${index}"><p>${item.a}</p></div></article>`).join("");
+  document.getElementById("app").innerHTML=`<div class="page ${active.dir==="rtl"?"rtl":""}">
+    <nav class="top-safe-nav" aria-label="Back"><button class="icon-button" type="button" data-action="back" aria-label="Back">${icon("chevron-left")}</button></nav>
+    <header class="hero"><img class="hero-art" src="${cfg.heroAsset}" alt=""><div class="hero-copy"><h1 class="hero-title">${active.heroPrefix} <strong>${active.heroAmount}</strong> ${active.heroSuffix}</h1><p class="hero-sub">${active.heroSub}</p><p class="hero-note">${active.heroNote}</p></div></header>
+    <div class="content">
+      <section class="notice"><span class="badge">${icon("megaphone")}</span><div><h2>${active.noticeTitle}</h2><p>${active.noticeText}</p></div></section>
+      <section class="decision-title"><h2>${active.decisionTitle}</h2></section>
+      <div class="question"><span class="badge">${icon("user-round")}</span><span>${active.question}</span></div>
+      <div class="connector"><div class="branch-labels"><span class="branch-label yes">${active.yes}</span><span class="branch-label no">${active.no}</span></div></div>
+      <section class="branches">
+        <article class="scenario new"><span class="badge">${icon("user-round-plus")}</span><h3>${active.newTitle}</h3><span class="pill">${active.newPill}</span><p>${active.newText}</p><p class="scenario-extra"><strong>${active.newExtra}</strong></p></article>
+        <article class="scenario existing"><span class="badge">${icon("user-round-x")}</span><h3>${active.existingTitle}</h3><span class="pill">${active.existingPill}</span><p>${active.existingText}</p><p class="scenario-extra">${icon("triangle-alert")}<strong>${active.existingExtra}</strong></p></article>
+      </section>
+      <section class="difference"><div class="difference-head"><span class="badge">${icon("circle-help")}</span><div><h2>${active.whyTitle}</h2><p>${active.whyText}</p></div></div><div class="comparison"><div class="compare-card">${icon("clock-3")}<div><strong>${active.before}</strong>${active.beforeText}</div></div><div class="compare-arrow">${icon("arrow-right")}</div><div class="compare-card">${icon("sparkles")}<div><strong>${active.now}</strong>${active.nowText}</div></div></div></section>
+      <section class="warning"><span class="badge">${icon("shield-alert")}</span><div><h2>${active.warningTitle}</h2><p>${active.warningText}</p></div></section>
+      <section class="faq">${faqs}</section>
+      <a class="cta" href="${cfg.privateChatGuideUrl}" data-action="guide">${icon("messages-square")}<span>${active.cta}</span>${icon("chevron-right","end")}</a>
+    </div><div class="bottom-safe"></div></div>`;
+  if(window.lucide)window.lucide.createIcons();
+  document.querySelector('[data-action="back"]').addEventListener("click",()=>{if(history.length>1)history.back();else window.dispatchEvent(new CustomEvent("activity:back"));});
+  document.querySelectorAll(".faq-question").forEach(btn=>btn.addEventListener("click",()=>{const item=btn.closest(".faq-item");const open=item.classList.toggle("open");btn.setAttribute("aria-expanded",String(open));}));
+  document.querySelector('[data-action="guide"]').addEventListener("click",event=>{if(cfg.privateChatGuideUrl.startsWith("#")){event.preventDefault();window.dispatchEvent(new CustomEvent("activity:open-private-chat-guide",{detail:{locale}}));}});
 })();
